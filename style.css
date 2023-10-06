@@ -1,0 +1,184 @@
+/* 
+- Dark cyan: hsl(158, 36%, 37%)
+- Cream: hsl(30, 38%, 92%)
+
+### Neutral
+
+- Very dark blue: hsl(212, 21%, 14%)
+- Dark grayish blue: hsl(228, 12%, 48%)
+- White: hsl(0, 0%, 100%)
+*/
+
+ @import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap');
+
+
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+
+body{
+    font-size: 14px;
+    font-family: "Montserrat", sans-serif;
+    background-color: hsl(30, 38%, 92%) ;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: calc(100vh -0.1px);
+    margin:0 1.5rem;
+}
+
+
+.imgs img{
+    border-radius:1rem 1rem 0 0;
+}
+
+
+img{
+    max-width: 100%;
+}
+
+
+.container{
+    max-width: 600px;
+    margin:5rem;
+}
+
+
+.info{
+    background-color: hsl(0, 0%, 100%);
+    padding:1.5rem;
+    border-radius: 0 0 1rem 1rem;
+    margin-top: -1rem;
+}
+
+
+h1, .price{
+    font-family:"Fraunces", sans-serif;
+}
+
+
+h2{
+    color:hsl(228, 12%, 48%);
+    text-transform: uppercase;
+    font-size:0.8rem;
+    font-weight: 500;
+    margin-bottom: 1rem;
+    letter-spacing: 0.2rem;
+}
+
+
+h1{
+    color:hsl(212, 21%, 14%);
+    margin-bottom: 1rem;
+    font-size: 2rem;
+}
+
+
+p{
+    color:hsl(228, 12%, 48%);
+    line-height: 1.8;
+}
+
+
+.container p{
+    margin-bottom: 2rem;
+}
+
+
+
+ul{
+    display: flex;
+    align-items: center;
+    margin-bottom: 2rem;
+
+}
+
+ul li{
+    list-style: none;
+}
+
+
+.price{
+    color:hsl(158, 36%, 37%);
+    font-size: 2rem;
+    margin-right: 1.5rem;
+}
+
+li:nth-child(2){
+    color:hsl(228, 12%, 48%);
+    text-decoration:line-through;
+}
+
+
+.container .btn{
+    background-color:hsl(158, 36%, 37%);
+    color:hsl(0, 0%, 100%);
+    font-weight: 700;
+    font-size: 1rem;
+    padding:1rem 2rem;
+    width:100%;
+    outline:none;
+    cursor:pointer;
+    transition: 0.2s;
+    border:none;
+    border-radius: 0.5rem;
+    display: flex;
+    justify-content: center;
+}
+
+
+.container .btn img{
+    margin-right: 0.5rem;
+}
+
+
+.btn, li{
+    font-family: inherit;
+}
+
+
+.container .btn:hover{
+    background-color: hsl(158, 36%, 18%);
+}
+
+
+@media (min-width:640px){
+    .container{
+        display:grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+
+.container div:first-child img{
+    border-radius: 0.635rem 0 0 0.635rem;
+    width: 100%;
+}
+
+.container div:last-child{
+    border-radius: 0 0.635rem 0.635rem 0;
+    margin-top:0;
+    padding: 1.5rem 1.5rem 0; 
+}
+
+.container p{
+    margin-bottom: 1rem;
+}
+
+picture img{
+    height:100%;
+}
+
+}
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+    margin-top: 2rem;
+}
+.attribution a {
+     color: hsl(228, 45%, 44%); 
+    }
